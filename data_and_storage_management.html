@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Chat App - Data and Storage</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;700;900" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1173d4;
+        --secondary-text: #6b7280;
+        --background-color: #f9fafb;
+        --border-color: #e5e7eb;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--background-color);
+      }
+      .setting-item {
+        border-bottom: 1px solid var(--border-color);
+        transition: background-color 0.2s ease-in-out;
+      }
+      .setting-item:last-child {
+        border-bottom: none;
+      }
+      .setting-item:hover {
+        background-color: #f3f4f6;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+<div class="flex h-screen w-full flex-col bg-white">
+<header class="flex h-16 shrink-0 items-center justify-between border-b border-gray-200 bg-white px-6">
+<div class="flex items-center gap-3">
+<div class="flex size-8 items-center justify-center rounded-lg bg-blue-600 text-white">
+<span class="material-symbols-outlined text-xl"> chat_bubble </span>
+</div>
+<h1 class="text-xl font-semibold text-gray-800">ChatApp</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 hover:text-gray-800">
+<span class="material-symbols-outlined text-2xl"> search </span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAoM2kDNejtzzAumVHcR7d8nIMwJc_P8rJBrU3AXb-AmwKLLqIjVImDHN8ZwSMGVhRRxJy0ls23OpBAvT3PKfvNK0eLXhLdWFVdjVdpywh-CrE2pJZmrQmjJKw6DaFewsFW4hYQeXS8We8vHqSIFCSD5etqL-sS_lCOMCW7p-O8QeYVsaBD-eWjXVQ6-0Fj5bYsqFTo_L6Np2Lb7DlhOLu0sLjhLyD6IMLLHB1h8wTyQbflPAUmQ69G2p-fBtMEHuoyMez1PMuX8E");'></div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto bg-gray-50 p-6 md:p-10">
+<div class="mx-auto max-w-4xl">
+<div class="mb-8 flex items-center gap-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-3xl font-bold text-gray-900">Data and Storage</h2>
+</div>
+<div class="rounded-lg border border-gray-200 bg-white shadow-sm">
+<div class="p-6">
+<h3 class="mb-4 text-lg font-semibold text-gray-800">Manage Storage</h3>
+<div class="flex items-center justify-between">
+<div>
+<p class="text-base text-gray-800">Total Storage Used</p>
+<p class="text-2xl font-bold text-gray-900">1.2 GB</p>
+</div>
+<button class="flex items-center gap-2 rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700">
+<span class="material-symbols-outlined text-base">folder_managed</span>
+<span>Manage</span>
+</button>
+</div>
+<div class="mt-4 h-2 w-full rounded-full bg-gray-200">
+<div class="h-2 rounded-full bg-blue-600" style="width: 45%"></div>
+</div>
+</div>
+<div class="setting-item p-6">
+<h3 class="text-lg font-semibold text-gray-800">Chat History</h3>
+<div class="mt-4 flex items-start justify-between">
+<div>
+<p class="font-medium text-gray-800">Clear Chat History</p>
+<p class="text-sm text-gray-500">Permanently delete all your chat messages. This action cannot be undone.</p>
+</div>
+<button class="ml-4 flex items-center gap-2 rounded-md bg-red-50 px-3 py-1.5 text-sm font-medium text-red-600 hover:bg-red-100">
+<span class="material-symbols-outlined text-base">delete_forever</span>
+<span>Clear</span>
+</button>
+</div>
+</div>
+<div class="setting-item p-6">
+<h3 class="text-lg font-semibold text-gray-800">Media Auto-Download</h3>
+<div class="mt-4 flex items-center justify-between">
+<div>
+<p class="font-medium text-gray-800">When using mobile data</p>
+<p class="text-sm text-gray-500">Photos</p>
+</div>
+<button class="text-sm text-blue-600 hover:underline">Change</button>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<div>
+<p class="font-medium text-gray-800">When connected on Wi-Fi</p>
+<p class="text-sm text-gray-500">All media</p>
+</div>
+<button class="text-sm text-blue-600 hover:underline">Change</button>
+</div>
+</div>
+<div class="setting-item p-6">
+<h3 class="text-lg font-semibold text-gray-800">Backup &amp; Export</h3>
+<div class="mt-4 flex items-start justify-between">
+<div>
+<p class="font-medium text-gray-800">Backup Chat Data</p>
+<p class="text-sm text-gray-500">Create a backup of your messages and media to restore later.</p>
+</div>
+<button class="ml-4 flex items-center gap-2 rounded-md bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-200">
+<span class="material-symbols-outlined text-base">backup</span>
+<span>Backup Now</span>
+</button>
+</div>
+<div class="mt-4 flex items-start justify-between">
+<div>
+<p class="font-medium text-gray-800">Export Chat History</p>
+<p class="text-sm text-gray-500">Export your chat history for archiving or use in other apps.</p>
+</div>
+<button class="ml-4 flex items-center gap-2 rounded-md bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-200">
+<span class="material-symbols-outlined text-base">ios_share</span>
+<span>Export</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,222 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #005C4B;
+      --secondary-color: #202C33;
+      --text-primary: #E9EDEF;
+      --text-secondary: #8696A0;
+      --background-primary: #111B21;
+      --background-secondary: #0B141A;
+      --message-out-bg: #005C4B;
+      --message-in-bg: #202C33;
+    }
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hidden {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-[var(--background-secondary)]" style='font-family: "Noto Sans", sans-serif;'>
+<div class="flex h-screen w-full text-[var(--text-primary)]">
+<aside class="w-96 flex-shrink-0 border-r border-gray-700/50 bg-[var(--background-primary)] flex flex-col">
+<header class="flex items-center justify-between p-3 bg-[var(--secondary-color)]">
+<img alt="Your Profile" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7O32pwJt6kf46yTtEZKTBW0uUoqLdt2NgLFocatmToeDPuzK3s8qBq6vGDac5fFxgFeOx5HfuQDSQa-sCptHjd8ZAFZrxEEGAv3ThXty5z_x8_fck0vFF6v7pJ0ptHEWvW0kPZRtQ_iGlwQXwpLhkFzxw0vEVUH5mmHzYN-g3xnwfZncAlIN2PfQI2czBpbNNHkZcK1fdOmhnwoKxoGmYp5VCKPNG2673GtwRiQgbqGWRwDbDvg97wedIDQ63gNtCHpahZumsk0w"/>
+<div class="flex items-center gap-4 text-[var(--text-secondary)]">
+<button class="p-2 hover:text-white">
+<span class="material-symbols-outlined">
+              groups
+            </span>
+</button>
+<button class="p-2 hover:text-white">
+<span class="material-symbols-outlined">
+              sync
+            </span>
+</button>
+<button class="p-2 hover:text-white">
+<span class="material-symbols-outlined">
+              chat
+            </span>
+</button>
+<button class="p-2 hover:text-white">
+<span class="material-symbols-outlined">
+              more_vert
+            </span>
+</button>
+</div>
+</header>
+<div class="p-2">
+<div class="relative">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 text-[var(--text-secondary)]">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</span>
+<input class="w-full rounded-lg bg-[var(--secondary-color)] py-1.5 pl-10 pr-4 text-sm text-[var(--text-primary)] placeholder-[var(--text-secondary)] focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)]" placeholder="Search or start a new chat" type="text"/>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto scrollbar-hidden">
+<ul class="divide-y divide-gray-800/50">
+<li class="flex cursor-pointer items-center gap-4 p-3 hover:bg-gray-800/50 bg-[var(--secondary-color)]">
+<div class="relative">
+<img alt="Sophia Clark" class="h-12 w-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5PpzarZ8o3hD8_XXVA-8E_eXXDTYrThNijYAc6Wlvlz3OKiep2EVSpzTu8VgicH_U6PK31z7ZHqMoNulbEn2FQDHE8rMtam2PH8Y4cj37nyQwZu9CUDfXWJheup9aJMDfPtPv-VbfUsrhAR9MmpkWO14NSR_M8zLKty7stUvJNbxwLbTHfIkf6Kji5qCGC8-mJSSiA-289SOR5G8i7xIOvpF2Foh26oOrCVWfZHa9FeOHWgXuAQP7ti4y7_gY1XBMjvI8jnUIlYI"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between">
+<p class="text-base font-medium text-[var(--text-primary)]">Sophia Clark</p>
+<p class="text-xs text-green-400">10:42 AM</p>
+</div>
+<p class="text-sm text-[var(--text-secondary)] line-clamp-1">I'm considering the coast. Maybe a beach getaway?</p>
+</div>
+</li>
+<li class="flex cursor-pointer items-center gap-4 p-3 hover:bg-gray-800/50">
+<img alt="Ethan Bennett" class="h-12 w-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQm7vlGgj4Omnl4Xz6NM7CBrCQRvIWIXiOJGAyu_Uieq0ufoHmvjRCzVMvA9CWlBJRCa6zFSMG9O6fa8XZ6pGMVYs75eLMRsqV3jN0fu4Jd1kui7LNa3liu9pef-IdpuDA7YmMT8lxt8O2doAknURzKexhcl5xpQyXhQIRO44pZEdtpprgfHckUdenuEcX8ROHqyYvVfmjKwhRtcmjKsHwL_UjRk-Iq4AHqGRViFvT-9rFTdKchcKjW6lmwpKhWg9z_z6xuEntnU8"/>
+<div class="flex-1">
+<div class="flex justify-between">
+<p class="text-base font-medium text-[var(--text-primary)]">Ethan Bennett</p>
+<p class="text-xs text-[var(--text-secondary)]">Yesterday</p>
+</div>
+<p class="text-sm text-[var(--text-secondary)] line-clamp-1">Last message preview...</p>
+</div>
+</li>
+<li class="flex cursor-pointer items-center gap-4 p-3 hover:bg-gray-800/50">
+<img alt="Olivia Harper" class="h-12 w-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUZ1W0_XmjH4_Xa9rQFQsuJJGMfOHIIEOR2LjelUjMSAUsC5Q5cjPTelQJVhEUduYTSbTK64dmY6bEBXzrkwr8xP0xuDVDOW_GCm56m4MLw0PH3xaXvkauedv1L5pfh-LQ8FsU5VIfcr6eirIyvS3kzycUfsc13DAT4tWhJkOF4e20-DerrTXs-BLw7WDQ8vPVwkzQ0GloOTmTrVC4_DFl5qgcdTQ0NGcAiI8ajs0SBlC-vGtGZV4eLVwZNH8SyVt2SBfceDaxn7Y"/>
+<div class="flex-1">
+<div class="flex justify-between">
+<p class="text-base font-medium text-[var(--text-primary)]">Olivia Harper</p>
+<p class="text-xs text-[var(--text-secondary)]">2 days ago</p>
+</div>
+<p class="text-sm text-[var(--text-secondary)] line-clamp-1">Last message preview...</p>
+</div>
+</li>
+<li class="flex cursor-pointer items-center gap-4 p-3 hover:bg-gray-800/50">
+<img alt="Liam Carter" class="h-12 w-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGxGse3G1d0i1CMmcWJ8PpSiFRm_a1DWIvQVFFayaYheEU0PkVaJE6R6RvCr3xZfxbIfZKPBEeyilB7rejXFTPtmuJ0-xtO460Ad0Hl4Y5Q1WVwxnoC4soQWIiq08wwuM_Firvwdw2s4qHzTPHhuN7isxzKyUORsVdfcAn6KvA1nz_tbyVllcCQJOcW9OMm0gBB1-IV8xHZUMFJphGkwPhb7t82kqFNbxonVNj9BvVhXavWTJt8EestRhKLIIfYaeKm5jhuxGWFuc"/>
+<div class="flex-1">
+<p class="text-base font-medium text-[var(--text-primary)]">Liam Carter</p>
+<p class="text-sm text-[var(--text-secondary)] line-clamp-1">Last message preview...</p>
+</div>
+</li>
+<li class="flex cursor-pointer items-center gap-4 p-3 hover:bg-gray-800/50">
+<img alt="Ava Morgan" class="h-12 w-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvYuH3lv5mYOUMmNtAYkKHS6GmKRVYrqXhOqYywpOcGg5VRiwr1dIe7mi-Dwoy2_UYpdn6Fg4yLVI4kNiO8Rq6eN_x8RAcv40IXxPqHUtllk8r_6ox2Q4GhKBfHpU-6nUcQ7iJCuECrGDTrr-iRuJR5OW1Vx9YJycW1tFC9Le5Idy_yOdcmNaZyydyyZ-PugnktpnVpJrPUC9Bv4Ezra8F-wLIq1p2mMNQUYJbCElrW4Q2IcJysoKANYZPS8jQM6no7gv90Rh-RPk"/>
+<div class="flex-1">
+<p class="text-base font-medium text-[var(--text-primary)]">Ava Morgan</p>
+<p class="text-sm text-[var(--text-secondary)] line-clamp-1">Last message preview...</p>
+</div>
+</li>
+<li class="flex cursor-pointer items-center gap-4 p-3 hover:bg-gray-800/50">
+<img alt="Noah Parker" class="h-12 w-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACnqCnCUWr2abYGyOXUXoDqhP0VJJoO2gbdDqL2WNONDKQNLB0Fy036zGG02V0gamVtn6LckBNZGkTQAprcWfJmMND4B2vDM1aCU3GZ0cTFAqEoFQUFsIeR3ROMLVgVN4iWIgR6j60T1qXihXaaNIa5iEQz2gHfPKljEZ0JJjaUcrZgptejvIG0e9Qh3GuXLlQMstx1D0Fda_t4HKcjD6LTn1Bcd2cGVnibiR7_R7aQAPfpnUFA1cKN6jCcqs2Rg0Bgtt6-bq-GWE"/>
+<div class="flex-1">
+<p class="text-base font-medium text-[var(--text-primary)]">Noah Parker</p>
+<p class="text-sm text-[var(--text-secondary)] line-clamp-1">Last message preview...</p>
+</div>
+</li>
+</ul>
+</div>
+</aside>
+<main class="flex-1 flex flex-col bg-cover bg-center" style="background-image: url('image-226848c68b77464082269a23992225f2')">
+<header class="flex items-center justify-between border-b border-gray-700/50 p-3 bg-[var(--secondary-color)]">
+<div class="flex items-center gap-3">
+<img alt="Sophia Clark" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5PpzarZ8o3hD8_XXVA-8E_eXXDTYrThNijYAc6Wlvlz3OKiep2EVSpzTu8VgicH_U6PK31z7ZHqMoNulbEn2FQDHE8rMtam2PH8Y4cj37nyQwZu9CUDfXWJheup9aJMDfPtPv-VbfUsrhAR9MmpkWO14NSR_M8zLKty7stUvJNbxwLbTHfIkf6Kji5qCGC8-mJSSiA-289SOR5G8i7xIOvpF2Foh26oOrCVWfZHa9FeOHWgXuAQP7ti4y7_gY1XBMjvI8jnUIlYI"/>
+<div>
+<h2 class="text-base font-semibold text-[var(--text-primary)]">Sophia Clark</h2>
+<p class="text-xs text-[var(--text-secondary)]">online</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="rounded-full p-2 text-[var(--text-secondary)] hover:bg-gray-700/50">
+<span class="material-symbols-outlined">
+              videocam
+            </span>
+</button>
+<button class="rounded-full p-2 text-[var(--text-secondary)] hover:bg-gray-700/50">
+<span class="material-symbols-outlined">
+              call
+            </span>
+</button>
+<button class="rounded-full p-2 text-[var(--text-secondary)] hover:bg-gray-700/50">
+<span class="material-symbols-outlined">
+              more_vert
+            </span>
+</button>
+</div>
+</header>
+<div class="flex-1 overflow-y-auto p-6 space-y-4">
+<div class="flex items-start gap-3">
+<div class="flex flex-col gap-1 items-start">
+<div class="max-w-md rounded-lg rounded-tl-none bg-[var(--message-in-bg)] px-3 py-2 text-white shadow">
+<p>Hey there! How's your day going?</p>
+<p class="text-xs text-right text-gray-400 mt-1">10:30 AM</p>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-3 justify-end">
+<div class="flex flex-col gap-1 items-end">
+<div class="max-w-md rounded-lg rounded-tr-none bg-[var(--message-out-bg)] px-3 py-2 text-white shadow">
+<p>Hi Sophia! It's been pretty good, just finished a big project. How about yours?</p>
+<div class="flex items-center justify-end mt-1">
+<p class="text-xs text-gray-300 mr-1">10:31 AM</p>
+<span class="material-symbols-outlined text-base text-blue-400">done_all</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex flex-col gap-1 items-start">
+<div class="max-w-md rounded-lg rounded-tl-none bg-[var(--message-in-bg)] px-3 py-2 text-white shadow">
+<p>That's great to hear! Mine's been busy but productive. Just wrapped up a meeting.</p>
+<p class="text-xs text-right text-gray-400 mt-1">10:35 AM</p>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-3 justify-end">
+<div class="flex flex-col gap-1 items-end">
+<div class="max-w-md rounded-lg rounded-tr-none bg-[var(--message-out-bg)] px-3 py-2 text-white shadow">
+<p>Nice! Anything exciting on the horizon?</p>
+<div class="flex items-center justify-end mt-1">
+<p class="text-xs text-gray-300 mr-1">10:36 AM</p>
+<span class="material-symbols-outlined text-base text-blue-400">done_all</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex flex-col gap-1 items-start">
+<div class="max-w-md rounded-lg rounded-tl-none bg-[var(--message-in-bg)] px-3 py-2 text-white shadow">
+<p>Actually, yes! I'm planning a weekend trip. Any suggestions?</p>
+<p class="text-xs text-right text-gray-400 mt-1">10:40 AM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[var(--secondary-color)] p-4 flex items-center">
+<button class="p-2 text-[var(--text-secondary)] hover:text-white">
+<span class="material-symbols-outlined">
+            sentiment_satisfied
+          </span>
+</button>
+<button class="p-2 text-[var(--text-secondary)] hover:text-white">
+<span class="material-symbols-outlined">
+            attach_file
+          </span>
+</button>
+<input class="flex-1 bg-[var(--background-primary)] rounded-lg px-4 py-2 mx-2 text-white placeholder-[var(--text-secondary)] focus:outline-none" placeholder="Type a message" type="text"/>
+<button class="p-2 text-[var(--text-secondary)] hover:text-white">
+<span class="material-symbols-outlined">
+            mic
+          </span>
+</button>
+</div>
+</main>
+</div>
+
+</body></html>
